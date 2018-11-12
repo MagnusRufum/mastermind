@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+require_relative '../lib/mastermind.rb'
+require 'colorize'
+
+#new_game = Mastermind.new
+puts "                                        
+                WELCOME TO              
+                MASTERMIND              
+                                        ".light_yellow.on_black
