@@ -1,9 +1,27 @@
 #!/usr/bin/env ruby
-require_relative '../lib/mastermind.rb'
+#require_relative '../lib/mastermind.rb'
 require 'colorize'
 
 #new_game = Mastermind.new
-puts "                                        
-                WELCOME TO              
-                MASTERMIND              
-                                        ".light_yellow.on_black
+puts "\n"
+puts "WELCOME TO".bold.light_yellow.center(88)
+puts ""
+puts "Ｍ Ａ Ｓ Ｔ Ｅ Ｒ Ｍ Ｉ Ｎ Ｄ".light_yellow.blink.center(80)
+puts "\n"
+puts "╔═════════════════════════════════╗".center(74)
+puts "║       SIMPLE VERSION RULES      ║".center(74)
+puts "╚═════════════════════════════════╝".center(74)
+
+puts "\nThe computer will generate a 4 color code, and the player will have 12 
+chances to guess the code. The computer will provide feedback for each guess, 
+placing key pegs underneath corresponding colors. A white key peg signifies a
+correct color choice but an incorrect placement, a black key peg signifies 
+correct color and placement.
+
+If there are duplicate colors in the guess, they cannot all be awarded a
+key peg unless they correspond to the same number of duplicate colors in the
+hidden code. 
+
+Once feedback is provided, another guess is made; guesses and feedback continue
+to alternate until either the codebreaker guesses correctly, or twelve incorrect 
+guesses are made."
